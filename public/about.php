@@ -53,7 +53,7 @@
 
     <!-- Hero Section -->
     <header class="header-hero pt-12 text-white">
-        <div class="p-8 md:p-12 rounded-3xl h-500px] mx-auto max-w-3xl text-center transform transition-transform">
+        <div class="p-8 md:p-12 rounded-3xl mx-auto max-w-3xl text-center transform transition-transform">
             <h1 class="text-4xl md:text-6xl font-bold mb-4">About Our Institute</h1>
             <p class="text-lg md:text-xl text-gray-200 mb-8">
                 Leading the way in technical education and innovation since its inception.

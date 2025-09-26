@@ -200,14 +200,16 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == '1') {
             display: inline-block;
             width: 20px;
             height: 20px;
-            border: 3px solid rgba(255,255,255,.3);
+            border: 3px solid rgba(255, 255, 255, .3);
             border-radius: 50%;
             border-top-color: #fff;
             animation: spin 1s ease-in-out infinite;
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         /* Responsive table styles */
@@ -216,7 +218,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == '1') {
                 font-size: 0.875rem;
             }
         }
-        
+
         /* Dropdown styles */
         .dropdown-menu {
             display: none;
@@ -226,7 +228,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == '1') {
             margin-top: 0.5rem;
             z-index: 50;
         }
-        
+
         .dropdown-menu.show {
             display: block;
         }
@@ -294,7 +296,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == '1') {
 
         <!-- Mobile Login Button -->
         <button id="mobileLoginButton" class="w-full mt-4 bg-blue-600 text-white py-2 rounded-md font-medium">Login</button>
-        
+
         <!-- Mobile Login Dropdown -->
         <div id="mobileLoginDropdown" class="mt-4 hidden">
             <a href="student-login.php" class="block w-full text-center py-2 text-gray-600 font-medium hover:bg-gray-100 border-b border-gray-100">Student Login</a>
@@ -304,10 +306,10 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == '1') {
     </div>
 
     <!-- Hero Section -->
-    <header class="header-hero text-white">
-        <div class="p-6 md:p-12 rounded-3xl mx-auto max-w-5xl text-center w-full">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Student Information & Resources</h1>
-            <p class="text-base md:text-lg text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto">
+    <header class="header-hero pt-4 text-white">
+        <div class="p-4 md:p-12 rounded-3xl mx-auto max-w-4xl text-center transform transition-transform">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Student Information & Resources</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8">
                 Your one-stop destination for all academic, extracurricular, and administrative information.
             </p>
         </div>
@@ -535,7 +537,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == '1') {
         const searchInput = document.getElementById('searchInput');
         const sortSelect = document.getElementById('sortSelect');
         const studentGrid = document.getElementById('studentGrid');
-        
+
         let searchTimeout;
         let isDropdownOpen = false;
 
@@ -558,7 +560,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == '1') {
                 loginDropdown.classList.add('hidden');
                 isDropdownOpen = false;
             }
-            
+
             // Also close mobile menu when clicking outside
             if (mobileMenu.classList.contains('show') && !mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
                 mobileMenu.classList.remove('show');
@@ -600,10 +602,10 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == '1') {
         function updateStudents() {
             const searchTerm = searchInput.value;
             const sortBy = sortSelect.value;
-            
+
             // Show loading indicator
             studentGrid.innerHTML = '<div class="col-span-full text-center py-8"><div class="loading mx-auto mb-4"></div><p>Loading students...</p></div>';
-            
+
             const xhr = new XMLHttpRequest();
             xhr.open('GET', `?ajax=1&search=${encodeURIComponent(searchTerm)}&sort=${encodeURIComponent(sortBy)}`, true);
             xhr.onreadystatechange = function() {

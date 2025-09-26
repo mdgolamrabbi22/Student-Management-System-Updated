@@ -233,7 +233,7 @@
 
   <!-- Hero Section -->
   <header class="header-hero pt-12 text-white">
-    <div class="p-4 md:p-12 rounded-3xl h-500px] mx-auto max-w-4xl text-center transform transition-transform">
+    <div class="p-4 md:p-12 rounded-3xl mx-auto max-w-4xl text-center transform transition-transform">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">Academic Programs</h1>
       <p class="text-lg md:text-xl text-gray-200 mb-8">
         Explore the Diploma in Engineering courses offered at Barisal Polytechnic Institute.

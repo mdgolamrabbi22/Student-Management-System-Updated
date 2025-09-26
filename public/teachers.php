@@ -53,13 +53,13 @@
     <?php include_once '../includes/header.php'; ?>
 
     <header class="header-hero pt-12 text-white">
-    <div class="p-4 md:p-12 rounded-3xl mx-auto max-w-5xl text-center transform transition-transform">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Meet Our Teacher</h1>
-      <p class="text-lg md:text-xl text-gray-200 mb-12">
-        Explore the dedicated and experienced instructors at Barishal Polytechnic Institute.
-      </p>
-    </div>
-  </header>
+        <div class="p-4 md:p-12 rounded-3xl mx-auto max-w-5xl text-center transform transition-transform">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Meet Our Teacher</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-12">
+                Explore the dedicated and experienced instructors at Barishal Polytechnic Institute.
+            </p>
+        </div>
+    </header>
 
     <div class="container mx-auto px-4 py-16">
         <!-- Welcome Section -->
@@ -114,7 +114,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     <?php foreach ($deptTeachers as $t):
                         $img = !empty($t['image']) ? '../uploads/teachers/' . htmlspecialchars($t['image']) : '/assets/images/default-teacher.png';
-                        ?>
+                    ?>
                         <div class="teacher-card text-center bg-gray-50 rounded-xl shadow-md overflow-hidden"
                             onclick='openTeacherModal(<?php echo htmlspecialchars(json_encode($t), ENT_QUOTES, 'UTF-8'); ?>)'>
                             <div class="bg-gradient-to-b from-blue-100 to-gray-50 pt-8 pb-4">
@@ -145,7 +145,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     <?php foreach ($deptTeachers as $t):
                         $img = !empty($t['image']) ? '../uploads/teachers/' . htmlspecialchars($t['image']) : '/assets/images/default-teacher.png';
-                        ?>
+                    ?>
                         <div class="teacher-card text-center bg-gray-50 rounded-xl shadow-md overflow-hidden"
                             onclick='openTeacherModal(<?php echo htmlspecialchars(json_encode($t), ENT_QUOTES, 'UTF-8'); ?>)'>
                             <div class="bg-gradient-to-b from-blue-100 to-gray-50 pt-8 pb-4">
@@ -176,7 +176,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     <?php foreach ($deptTeachers as $t):
                         $img = !empty($t['image']) ? '../uploads/teachers/' . htmlspecialchars($t['image']) : '/assets/images/default-teacher.png';
-                        ?>
+                    ?>
                         <div class="teacher-card text-center bg-gray-50 rounded-xl shadow-md overflow-hidden"
                             onclick='openTeacherModal(<?php echo htmlspecialchars(json_encode($t), ENT_QUOTES, 'UTF-8'); ?>)'>
                             <div class="bg-gradient-to-b from-blue-100 to-gray-50 pt-8 pb-4">
@@ -207,7 +207,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     <?php foreach ($deptTeachers as $t):
                         $img = !empty($t['image']) ? '../uploads/teachers/' . htmlspecialchars($t['image']) : '/assets/images/default-teacher.png';
-                        ?>
+                    ?>
                         <div class="teacher-card text-center bg-gray-50 rounded-xl shadow-md overflow-hidden"
                             onclick='openTeacherModal(<?php echo htmlspecialchars(json_encode($t), ENT_QUOTES, 'UTF-8'); ?>)'>
                             <div class="bg-gradient-to-b from-blue-100 to-gray-50 pt-8 pb-4">
@@ -238,7 +238,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                     <?php foreach ($deptTeachers as $t):
                         $img = !empty($t['image']) ? '../uploads/teachers/' . htmlspecialchars($t['image']) : '/assets/images/default-teacher.png';
-                        ?>
+                    ?>
                         <div class="teacher-card text-center bg-gray-50 rounded-xl shadow-md overflow-hidden"
                             onclick='openTeacherModal(<?php echo htmlspecialchars(json_encode($t), ENT_QUOTES, 'UTF-8'); ?>)'>
                             <div class="bg-gradient-to-b from-blue-100 to-gray-50 pt-8 pb-4">
